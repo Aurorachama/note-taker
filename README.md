@@ -10,7 +10,10 @@
 * [Contact](#Contact)
 
 ## Deploy Link
-https://github.com/Aurorachama/note-taker
+https://note-taker-aurorachama.herokuapp.com/
+```
+Currently, The delete function on Heroku are not working as expected. However, the localized version should be working as expected.
+```
 
 ## Description 
 
@@ -58,7 +61,6 @@ Keep in mind that the note would be displayed at the input field
 
 
 ## Screenshot
-**Powershell is used to commence the application but other commend line works the same**
 ![Commencing the application](./commencing.png)
 
 **Every question and the success message**
