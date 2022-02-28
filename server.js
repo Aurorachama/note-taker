@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //reduce the id to 4 (pass as an argument), and transfer all letters to lower case
-let uid = nanoid(4).toLowerCase();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,6 +20,7 @@ app.get('/api/notes', (req,res) => {
 });
 
 app.post('/api/notes', (req,res) => {
+    let uid = nanoid(4).toLowerCase();
     req.body.id = uid;
     const noteToAdd = req.body;
     note.push(noteToAdd);
