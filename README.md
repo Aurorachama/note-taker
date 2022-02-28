@@ -10,7 +10,7 @@
 * [Contact](#Contact)
 
 ## Deploy Link
-https://github.com/Aurorachama/
+https://github.com/Aurorachama/note-taker
 
 ## Description 
 
