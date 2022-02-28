@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //reduce the id to 4 (pass as an argument), and transfer all letters to lower case
-const uid = nanoid(4).toLowerCase();
+let uid = nanoid(4).toLowerCase();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
