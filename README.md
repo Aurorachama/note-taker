@@ -11,10 +11,10 @@
 
 ## Deploy Link
 https://note-taker-aurorachama.herokuapp.com/
-```
-Currently, The delete function on Heroku are not working as expected. However, the localized version should be working as expected.
-```
 
+~~Currently, The delete function on Heroku are not working as expected. However, the localized version should be working as expected.~~<br>
+* The issue of 'delete function' misfunctioning is fixed
+<br>
 ## Description 
 
 This is a application allow users to write, save and display notes using HTML.
