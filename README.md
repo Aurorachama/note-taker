@@ -61,12 +61,13 @@ Keep in mind that the note would be displayed at the input field
 
 
 ## Screenshot
+  **Homepage**
 ![Commencing the application](./commencing.png)
 
-**Every question and the success message**
+**Input Section**
 ![Completion](./complete.png)
 
-**The product and its path(inside the Output folder)**
+**Display of Notes**
 ![Product of the application](./product.png)
 
 ### Contact 
