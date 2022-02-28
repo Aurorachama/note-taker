@@ -31,7 +31,6 @@ app.post('/api/notes', (req,res) => {
     console.log(`${req.method} request received to ${req.method} note`);
 
 });
-
 app.delete('/api/notes/:id', (req, res) => {
     const {id} = req.params;
     const delIndex = note.findIndex(p => p.id == id);
