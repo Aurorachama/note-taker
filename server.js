@@ -21,7 +21,7 @@ app.get('/api/notes', (req,res) => {
 });
 
 app.post('/api/notes', (req,res) => {
-    req.body.id = uid; //delete?
+    req.body.id = uid;
     const noteToAdd = req.body;
     note.push(noteToAdd);
     fs.writeFileSync(path.join(__dirname,'/db/db.json'),
@@ -33,16 +33,17 @@ app.post('/api/notes', (req,res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    const deleteIndex = req.params.id;
-    note.splice(deleteIndex, 1);
+    const {id} = req.params;
+    const delIndex = note.findIndex(p => p.id == id);
+    note.splice(delIndex, 1);
    
     fs.writeFileSync(
       path.join(__dirname, '/db/db.json'), 
       JSON.stringify(note)
     );
     //update the db.json file
-    res.json(`${req.method} request received to ${req.method} ${deleteIndex} note`);
-    console.log(`${req.method} request received to ${req.method} ${deleteIndex} note`);
+    res.json(`${req.method} request received to ${req.method} ${delIndex} note`);
+    console.log(`${req.method} request received to ${req.method} ${delIndex} note`);
   });
 
 app.get('/notes', (req,res) => {
